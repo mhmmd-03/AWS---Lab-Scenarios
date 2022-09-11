@@ -1,0 +1,158 @@
+# AWS Lab Scenarios 
+
+# Scenario #1: 
+Create a trail. 
+
+**Objective:** 
+Create a trail in cloud trail 
+
+*Services:* AWS Cloud trail, AWS S3 
+
+# Scenario #2: 
+Create an IAM user, user group and Custom policy. 
+
+**Objective:** 
+Create a custom policy of ec2 which allows limited list, read, and write access and attach it with a user group with at least two users with programmatic access. 
+
+*Services:* IAM user, IAM user group, IAM Policies 
+
+# Scenario #3: 
+Configure a billing Alarm with Alert and create a dashboard 
+
+**Objective:** 
+In this scenario, you need to create a billing Alarm which should alert you over Email & SMS once the desired value will be reached. And create a dashboard in it 
+
+*Services:* AWS SNS, AWS Cloud watch
+
+# Scenario #4: 
+Create an S3 bucket with encryption and versioning. 
+
+**Objective:** 
+Create a bucket with default encryption, enable object-level versioning with public access, and upload 3 versions of the text file, version 1 should be on S3 standard, version 2 should exist on Standard-IA, and version 3 should exist on RRS 
+
+*Services:* AWS S3 
+
+# Scenario #5: 
+Create an S3 bucket with bucket policy and lifecycle. 
+
+**Objective:** 
+Create a bucket, with a bucket policy that denies a particular user to delete the file from an s3 bucket, and the S3 bucket lifecycle policy should be configured in this manner that every s3 standard object should go to s3-IA after 30 days & go to the glacier after 60 days. 
+
+*Services:* AWS S3 
+
+# Scenario #6: 
+Configure S3 bucket with S3 bucket policies 
+
+**Objective:** 
+In this scenario, you need to configure the S3 bucket along with mentioned items: 
+Create an s3 bucket with 3 folders name Stage, Dev & Prod, Write a bucket policy that allows IAM user A can access the stage folder only, the Rest of the users will be able to access only the Dev folder, and No IAM user will be able to access the Prod folder. 
+
+*Services:* AWS S3, S3 Bucket Policy
+
+# Scenario #7: 
+Deploy a Static website using an S3 bucket and CloudFront. 
+
+**Objective:** 
+In this scenario, deploy a static website using an S3 bucket and create a distribution using the cloud front. 
+
+*Services:* AWS S3, CloudFront 
+
+# Scenario #8: 
+Create a custom virtual private cloud that meets High Availability and fault tolerant 
+
+**Objective:** 
+Create a high availability VPC with 2 AZs. 
+
+*Services:* VPC, Subnets, IGW, NAT Gateway, Routes, Route Table 
+
+# Scenario #9: 
+Create a multi-Az virtual private cloud using CLI. 
+
+**Objective:** 
+Create a high availability VPC with 2 AZs. 
+
+*Services:* VPC, Subnets, IGW, NAT Gateway, Routes, Route Table 
+
+# Scenario #10: 
+Create 1 EC2 Machine that can communicate directly to AWS S3 without going to the Internet.
+
+**Objective:** 
+Create a Vm on the Custom VPC then connect S3 with EC2 privately without going to the internet. 
+
+*Services:* VPC, Subnets, Route Table and VPC endpoint. 
+
+# Scenario #11: 
+Launch a Bastion host and install the IIS server privately. 
+
+**Objective:** 
+Launch a Bastion host and install IIS server in a private window VM. 
+
+*Services:* VPC, EC2 
+
+# Scenario #12: 
+Create a Bastion host with 1 private IIS Server and a WordPress server 
+
+**Objective:** 
+Launch a website in such a manner that if we refresh a DNS, it shows the IIS server and WordPress server sequentially.
+
+*Services:* VPC, EC2, Auto Scaling, ELB, Route 53 
+
+# Scenario #13: 
+Create a Lambda function to manage an ec2 instance. 
+
+**Objective:** 
+Create a lambda function to start, restart, stop an ec2 instance 
+
+*Services:* AWS Lambda, EC2
+
+# Scenario #14: 
+Create a lambda function to store data in DynamoDB. 
+
+**Objective:** 
+Create a lambda function that performs the following task; 
+When we upload a file on s3 then its metadata should be stored in DynamoDB. 
+
+*Services:* AWS Lambda, S3, DynamoDB 
+
+# Scenario #15: 
+Create a lambda function to create an automated snapshot using existing volume 
+
+**Objective:** 
+Create a lambda function to create automated snapshot using existing volume via lambda function Existing role. Create an IAM role that will help to invoke Lambda Function. 
+
+*Services:* AWS Lambda, EC2, IAM 
+
+# Scenario #16: 
+Create EC2 template & launch VM using template 
+
+**Objective:** 
+In this scenario, you need to configure the EC2 template & launch a VM using that template. 
+
+*Services:* AWS EC2, VPC
+
+# Scenario #17: 
+Create a private Relational Database. 
+
+**Objective:** 
+In this scenario, you have to create a Private relational database and connect it using Any DB Client. 
+
+*Services:* AWS VPC, RDS 
+
+# Scenario #18: 
+Create NoSQL DB using DynamoDB 
+
+**Objective:** 
+In this scenario, you need to create a DynamoDB table along with mentioned steps: 
+- Create a Primary key (String) & Sort keys (Number) ● Set Write & Read Capacity unit to 6 
+- Create a local secondary index 
+- Create a backup of the entire table 
+
+*Services:* AWS DynamoDB 
+
+# Scenario #19: 
+Configure blue-green deployment using Elastic beanstalk 
+
+**Objective:** 
+Create a sample PHP application in Elastic Beanstalk. 
+
+*Services:* AWS Elastic Beanstalk
